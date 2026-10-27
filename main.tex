@@ -1,0 +1,76 @@
+\documentclass[12pt,a4paper]{report}
+\usepackage{tbu_report}
+
+% ==============================================================================
+% CẤU HÌNH THÔNG TIN BÁO CÁO
+% ==============================================================================
+\ministry{BỘ GIÁO DỤC VÀ ĐÀO TẠO}
+\university{TRƯỜNG ĐẠI HỌC TÂY BẮC}
+\faculty{KHOA CÔNG NGHỆ THÔNG TIN}
+\reporttype{BÁO CÁO BÀI TẬP LỚN}
+\title{XÂY DỰNG HỆ THỐNG QUẢN LÝ HOẠT ĐỘNG NGHIÊN CỨU KHOA HỌC SINH VIÊN}
+\courseclass{K64 ĐẠI HỌC CNTT}
+\groupnumber{Nhóm 3}
+\advisor{TS. Phạm Quốc Thắng}
+\location{SƠN LA}
+\reportdate{THÁNG 05/2026}
+\logopath{tbu_logo.png}
+
+% Danh sách Sinh viên thực hiện (Hỗ trợ 2 cột tự động)
+\addstudent[NT]{\textbf{Lò Mạnh Đạt}}
+\addstudent{Phạm Thị Thanh Hảo}
+\addstudent{Hà Việt Cường}
+\addstudent{Nguyễn Huy Hoàng}
+\addstudent{Si Vi Xay Vong Xay}
+\addstudent{Sẻng Sụ Lị Nha Đuông Khăm}
+
+\begin{document}
+
+% ==============================================================================
+% 1. TRANG BÌA NGOÀI VÀ TRANG BÌA PHỤ
+% ==============================================================================
+\makeoutercover
+\makeinnercover
+
+% ==============================================================================
+% 2. LỜI CẢM ƠN
+% ==============================================================================
+\cleardoublepage
+\pagenumbering{roman}
+\input{Gioithieu_danhmuc/loicamon.tex}
+
+% ==============================================================================
+% 3. MỤC LỤC VÀ CÁC DANH MỤC (HÌNH ÁNH, BẢNG BIỂU, TỪ VIẾT TẮT)
+% ==============================================================================
+\makecontentlists
+\makelistoffigures
+\makelistoftables
+\input{Gioithieu_danhmuc/tuviettat.tex}
+
+% ==============================================================================
+% 4. BẢNG PHÂN CÔNG NHIỆM VỤ (TRANG RIÊNG)
+% ==============================================================================
+\input{Gioithieu_danhmuc/phancong.tex}
+
+% ==============================================================================
+% 5. NỘI DUNG CHÍNH CỦA BÁO CÁO
+% ==============================================================================
+\cleardoublepage
+\pagenumbering{arabic}
+
+\input{Noidungbaocao/modau.tex}
+\input{Noidungbaocao/chuong1.tex}
+\input{Noidungbaocao/chuong2.tex}
+\input{Noidungbaocao/chuong3.tex}
+\input{Noidungbaocao/ketluan.tex}
+
+
+% ==============================================================================
+% 6. Tài liệu tham khảo
+% ==============================================================================
+\cleardoublepage
+
+
+\input{tailieuthamkhao.bib}
+
+\end{document}
